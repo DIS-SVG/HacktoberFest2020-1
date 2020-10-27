@@ -1,16 +1,27 @@
-#include <bits/stdc++.h>
-using namespace std;
+
+#include <stdio.h>
 
 int main()
 {
-    int n = 5;
-    for (int i = 1; i <= n; i++)
-    {
-        for (int j = 1; j <= n - i; j++)
-            cout << " ";
-        for (int j = 1; j <= 2 * i - 1; j++)
-            cout << "*";
+    int i, j, N;
 
-        cout << endl;
+    /* Input number of rows from user */
+    printf("Enter number of rows: ");
+    scanf("%d", &N);
+
+    /* Iterate through N rows */
+    for(i=1; i<=N; i++)
+    {
+        /* Iterate over columns */
+        for(j=1; j<=N; j++)
+        {
+            /* Print star for each column */
+            printf("*");
+        }
+        
+        /* Move to the next line/row */
+        printf("\n");
     }
+
+    return 0;
 }
